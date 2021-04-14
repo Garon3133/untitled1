@@ -7,7 +7,6 @@ class ControllerPrilTesttest extends Controller {
 		$key_pril = '100-200';
 		
 		$this->load->model('pril/android');
-		
 		$customer = $this->model_pril_android->getCustomer($key_pril);
 		
 		$arr_customer = object_to_array(json_decode($customer[0]['custom_field']));
